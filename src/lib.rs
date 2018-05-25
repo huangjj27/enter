@@ -21,8 +21,7 @@ pub(crate) mod newlines {
 /// The mapping of newline characters is as follows:
 ///
 /// - Windows -> CRLF
-/// - Linux -> LF
-/// - MacOS -> CR
+/// - not Windows -> LF
 pub use newlines::ENTER;
 
 pub trait Enter {
@@ -32,7 +31,7 @@ pub trait Enter {
 impl Enter for str {
     /// trimming corresponding newline characters of running OS's stdin.
     ///
-    /// ## example(s)
+    /// # example(s)
     /// 
     /// ```rust
     /// use enter::{ Enter, ENTER };
