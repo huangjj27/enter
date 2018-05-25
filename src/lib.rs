@@ -13,11 +13,8 @@ pub(crate) mod newlines {
     #[cfg(target_os = "windows")]
     pub const ENTER: &'static str = CRLF;
 
-    #[cfg(target_os = "linux")]
+    #[cfg(not(target_os = "windows"))]
     pub const ENTER: &'static str = LF;
-
-    #[cfg(target_os = "macos")]
-    pub const ENTER: &'static str = CR;
 }
 
 /// Constant representing newline characters in the target OS. 

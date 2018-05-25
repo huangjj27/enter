@@ -1,8 +1,9 @@
 [package]
 name = "enter"
-version = "0.0.1"
+version = "0.0.2"
 authors = ["huangjj27 <huangjj.27@qq.com>"]
 description = "a simple crate to solve the CR/LF/CRLF problem from one line input on different OS"
 license = "MIT/Apache-2.0"
+readme = "README.md"
 
 [dependencies]
