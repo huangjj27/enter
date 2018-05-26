@@ -6,13 +6,17 @@
 pub(crate) mod newlines {
     #![allow(dead_code)]
 
-    const CR: &'static str = "\r";
+    // MacOS now uses LF for newlines. Commented out.
+    // const CR: &'static str = "\r";
+
     const LF: &'static str = "\n";
     const CRLF: &'static str = "\r\n";
 
+    /// newlines' character is CRLF. This indicate you're using Windows OS.
     #[cfg(target_os = "windows")]
     pub const ENTER: &'static str = CRLF;
 
+    /// newlines' character is LF. This indicate you're using non-Windows OS.
     #[cfg(not(target_os = "windows"))]
     pub const ENTER: &'static str = LF;
 }
