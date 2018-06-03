@@ -1,8 +1,8 @@
 [package]
 name = "enter"
-version = "0.0.4"
+version = "1.0.0"
 authors = ["huangjj27 <huangjj.27@qq.com>"]
 repository = "https://github.com/huangjj27/enter"
-description = "a simple crate to solve the CR/LF/CRLF problem from one line input on different OS"
+description = "The only thing the crate doing is to privide constant CR, LF, CRLF and ENTER."
 license = "MIT/Apache-2.0"
 readme = "README.md"
